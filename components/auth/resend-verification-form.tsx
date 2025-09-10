@@ -86,7 +86,7 @@ export function ResendVerificationForm({
             </div>
             <CardTitle>Check Your Email</CardTitle>
             <CardDescription>
-              We've sent a verification link to <strong>{submittedEmail}</strong>
+              We&apos;ve sent a verification link to <strong>{submittedEmail}</strong>
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -96,7 +96,7 @@ export function ResendVerificationForm({
             </p>
             <div className="text-center text-sm text-muted-foreground">
               <p>
-                Didn't receive the email?{" "}
+                Didn&apos;t receive the email?{" "}
                 <button
                   type="button"
                   onClick={() => {
@@ -127,7 +127,7 @@ export function ResendVerificationForm({
         <CardHeader className="text-center">
           <CardTitle className="text-xl font-bold">Resend Verification Email</CardTitle>
           <CardDescription className="max-w-xs mx-auto mt-2.5">
-            Enter your email address and we'll send you a new verification link
+            Enter your email address and we&apos;ll send you a new verification link
           </CardDescription>
         </CardHeader>
         <CardContent>

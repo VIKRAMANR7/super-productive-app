@@ -28,7 +28,6 @@ import { cn } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { ArrowLeft, CheckCircle, EyeIcon, EyeOffIcon, Mail } from "lucide-react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -44,7 +43,6 @@ export function RegisterForm({ className, ...props }: React.ComponentProps<"div"
   const [showPassword, setShowPassword] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
   const [registeredEmail, setRegisteredEmail] = useState("");
-  const router = useRouter();
 
   const form = useForm<RegisterFormData>({
     resolver: zodResolver(signUpSchema),
@@ -76,6 +74,7 @@ export function RegisterForm({ className, ...props }: React.ComponentProps<"div"
       }
     } catch (error) {
       toast.error("An unexpected error occurred. Please try again.");
+      console.error(error);
     }
   }
 
@@ -106,7 +105,7 @@ export function RegisterForm({ className, ...props }: React.ComponentProps<"div"
             </div>
             <CardTitle>Check Your Email</CardTitle>
             <CardDescription>
-              We've sent a verification link to <strong>{registeredEmail}</strong>
+              We&apos;ve sent a verification link to <strong>{registeredEmail}</strong>
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -127,7 +126,7 @@ export function RegisterForm({ className, ...props }: React.ComponentProps<"div"
             <div className="text-center text-sm text-muted-foreground">
               <p>The verification link will expire in 24 hours.</p>
               <p className="mt-2">
-                Didn't receive the email?{" "}
+                Didn&apos;t receive the email?{" "}
                 <Link
                   href="/auth/resend-verification"
                   className="font-medium text-primary hover:underline"

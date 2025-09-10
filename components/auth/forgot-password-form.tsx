@@ -85,12 +85,12 @@ export function ForgotPasswordForm({ className, ...props }: React.ComponentProps
             </div>
             <CardTitle>Check your email</CardTitle>
             <CardDescription className="mt-2">
-              We've sent a password reset link to <strong>{submittedEmail}</strong>
+              We&apos;ve sent a password reset link to <strong>{submittedEmail}</strong>
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
             <p className="text-center text-sm text-muted-foreground">
-              Didn't receive the email? Check your spam folder or{" "}
+              Didn&apos;t receive the email? Check your spam folder or{" "}
               <button
                 type="button"
                 onClick={() => {
@@ -122,7 +122,8 @@ export function ForgotPasswordForm({ className, ...props }: React.ComponentProps
         <CardHeader className="text-center">
           <CardTitle className="text-xl font-bold">Forgot your password?</CardTitle>
           <CardDescription className="max-w-xs mx-auto text-sm">
-            Enter your email address and we'll send you a link to reset your password.
+            Enter your email address and we&apos;ll send you a link to reset your
+            password.
           </CardDescription>
         </CardHeader>
         <CardContent>

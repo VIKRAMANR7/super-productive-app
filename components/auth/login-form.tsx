@@ -213,7 +213,7 @@ export function LoginForm({ className, ...props }: React.ComponentProps<"div">) 
             </Form>
 
             <div className="text-center text-sm -mt-4">
-              Don't have an account?{" "}
+              Don&apos;t have an account?{" "}
               <Link href="/auth/register" className="font-medium hover:underline">
                 Sign up
               </Link>
