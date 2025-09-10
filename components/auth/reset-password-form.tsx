@@ -91,6 +91,7 @@ export function ResetPasswordForm({
       } catch (error) {
         toast.error("Failed to validate reset link");
         router.push("/auth/forgot-password");
+        console.error(error);
       } finally {
         setIsValidatingToken(false);
       }

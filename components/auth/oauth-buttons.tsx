@@ -3,11 +3,7 @@ import { GithubIcon } from "@/components/icons/github-icon";
 import { GoogleIcon } from "@/components/icons/google-icon";
 import { Button } from "@/components/ui/button";
 
-interface OAuthButtonsProps {
-  mode?: "signin" | "signup";
-}
-
-export function OAuthButtons({ mode = "signin" }: OAuthButtonsProps) {
+export function OAuthButtons() {
   async function handleOAuthSignIn(provider: "github" | "google") {
     await signInWithOAuth(provider);
   }

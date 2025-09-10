@@ -17,8 +17,6 @@ interface VerificationEmailProps {
   verificationUrl: string;
 }
 
-const baseUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
-
 export function VerificationEmail({ name, verificationUrl }: VerificationEmailProps) {
   return (
     <Html>
@@ -207,5 +205,3 @@ const hr = {
   borderColor: "#e6ebf1",
   margin: "0",
 };
-
-// Only export as named export

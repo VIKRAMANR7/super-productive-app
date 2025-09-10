@@ -71,6 +71,7 @@ export function ForgotPasswordForm({ className, ...props }: React.ComponentProps
         message: errorMessage,
       });
       toast.error(errorMessage);
+      console.error(error);
     }
   }
 
