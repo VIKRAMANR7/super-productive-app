@@ -32,9 +32,10 @@ export function VerificationEmail({ name, verificationUrl }: VerificationEmailPr
               <Heading style={h1}>Verify your email address</Heading>
               <Text style={mainText}>Hi {name},</Text>
               <Text style={mainText}>
-                Thanks for signing up for Super Productive App! We want to make sure it's
-                really you. Please click the button below to verify your email address. If
-                you didn't create an account, you can safely ignore this message.
+                Thanks for signing up for Super Productive App! We want to make sure
+                it&apos;s really you. Please click the button below to verify your email
+                address. If you didn&apos;t create an account, you can safely ignore this
+                message.
               </Text>
 
               <Section style={buttonSection}>

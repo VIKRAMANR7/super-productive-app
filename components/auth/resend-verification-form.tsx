@@ -73,6 +73,7 @@ export function ResendVerificationForm({
         message: errorMessage,
       });
       toast.error(errorMessage);
+      console.error(error);
     }
   }
 
